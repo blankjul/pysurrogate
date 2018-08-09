@@ -8,5 +8,5 @@ setup(
     license='MIT',
     keywords="optimization",
     packages=find_packages(),
-    install_requires=['numpy', 'scipy', 'matplotlib', 'sklearn']
+    install_requires=['numpy', 'scipy', 'matplotlib', 'sklearn', 'torch']
 )

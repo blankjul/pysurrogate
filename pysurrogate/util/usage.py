@@ -1,15 +1,8 @@
-
-The method that should be used for interfacing is the pysurrogate.optimize.fit and pysurrogate.optimize.predict
-method.
-
-
-.. code:: python
-
-
 import numpy as np
-import matplotlib.pyplot as plt
-from pysurrogate.optimize import fit, predict
 
+import matplotlib.pyplot as plt
+
+from pysurrogate.optimize import fit, predict
 
 if __name__ == '__main__':
     # number of samples we will use for this example

@@ -49,7 +49,7 @@ class Dacefit(Surrogate):
         if self.ARD:
             theta = (np.full((1, n_var), 0.1), np.full((1, n_var), 1e-5), np.full((1, n_var), 1e5))
         else:
-            theta = (0.1, 0.0001, 1000)
+            theta = (0.1, 0.0001, 1e5)
 
         model = GaussianProcess(regr=self.regr,
                                 corr=self.corr,

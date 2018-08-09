@@ -1,11 +1,13 @@
-pysgp - Gaussian Process Surrogate
+pysurrogate - Surrogate Models
 ==================================
+
+{% include 'source/_introduction.rst' %}
 
 Installation
 ==================================
 {% include 'source/_installation.rst' %}
 
-Implementations
+Surrogates
 ==================================
 {% include 'source/_implementations.rst' %}
 

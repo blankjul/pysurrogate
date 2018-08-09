@@ -1,3 +1,5 @@
+import warnings
+
 import numpy as np
 
 from pymoo.util.normalization import normalize, denormalize
@@ -73,8 +75,17 @@ def fit(X, Y, methods=['nn', 'scipy_rbf', 'sklearn_polyregr', 'sklearn_dacefit']
 
     """
 
+    # if it is only one dimensional convert it
+    if X.ndim == 1:
+        X = X[:, None]
+    if Y.ndim == 1:
+        Y = Y[:, None]
+
     if X.shape[0] != Y.shape[0]:
         raise Exception("X and Y does not have the same number of rows!")
+
+    if isinstance(methods, str):
+        methods = [methods]
 
     # the object that is returned in the end having all the necessary information for the prediction
     res = {'n_samples': X.shape[0], 'n_var': X.shape[1], 'n_targets': Y.shape[1],
@@ -93,7 +104,13 @@ def fit(X, Y, methods=['nn', 'scipy_rbf', 'sklearn_polyregr', 'sklearn_dacefit']
     # create a list of all entries that should be run
     surrogates = []
     for entry in methods:
-        method, params = get_method_and_params(entry)
+
+        try:
+            method, params = get_method_and_params(entry)
+        except:
+            warnings.warn("Not able to load model %s. Will be skipped." % entry)
+            continue
+
         for param in params:
             surrogates.append({'name': entry, 'method': method, 'param': param, 'error': None})
 
@@ -166,6 +183,11 @@ def fit(X, Y, methods=['nn', 'scipy_rbf', 'sklearn_polyregr', 'sklearn_dacefit']
 
 
 def predict(res, X):
+
+    # if it is only one dimensional convert it
+    if X.ndim == 1:
+        X = X[:, None]
+
     Y = np.full((X.shape[0], len(res['models'])), np.inf)
 
     # denormalize if normalized before

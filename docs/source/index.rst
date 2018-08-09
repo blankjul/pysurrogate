@@ -7,22 +7,13 @@ Installation
 ==================================
 .. include:: _installation.rst
 
-Implementations
-==================================
-.. include:: _implementations.rst
-
 Usage
 ==================================
 .. include:: _usage.rst
 
-
-References
+Implementations
 ==================================
-
-.. bibliography:: references.bib
-   :style: unsrt
-   :all:
-
+.. include:: _implementations.rst
 
 Contact
 ==================================

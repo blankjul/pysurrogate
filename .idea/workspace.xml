@@ -2,83 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c6dfc3a-7ad1-48d4-886c-02a4a98cbb15" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/README.template" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/build.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/make.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/_contact.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/_implementations.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/_installation.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/_usage.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/conf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/index.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/references.bib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/eim/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/eim/evolutionary_interpolation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/eim/evolutionary_interpolation_tst.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/eim/meta_eim.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/gp/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/gp/dacefit/corr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/gp/dacefit/dace.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/gp/dacefit/fit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/gp/dacefit/optimize.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/gp/dacefit/regr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/gp/dacefit/surr_dacefit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/gp/gpml/gp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/gp/gpml/kernel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/gp/gpml/regr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/gp/meta_dace.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/gp/meta_george.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/gp/meta_gpflow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/gp/meta_gpy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/gp/meta_matlab.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/gp/sklearn/GaussianProcess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/meta_dnn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/meta_gb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/meta_keras.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/meta_myrbf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/meta_nearest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/meta_nn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/meta_rbf_boost.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/meta_rbf_github.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/meta_svm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/meta_svr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/meta_torch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/archive/meta_xgboost.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/models/matlab_dacefit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/models/my_rbf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/models/scipy_rbf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/models/sklearn_dacefit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/models/sklearn_polyregr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/models/torch_nn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/optimize.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/surrogate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/util/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/util/distance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/util/error_metrics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/util/matlabengine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/util/misc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/vendor/matlab/dace/corrcubic.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/vendor/matlab/dace/correxp.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/vendor/matlab/dace/correxpg.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/vendor/matlab/dace/corrgauss.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/vendor/matlab/dace/corrlin.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/vendor/matlab/dace/corrspherical.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/vendor/matlab/dace/corrspline.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/vendor/matlab/dace/dace_fit.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/vendor/matlab/dace/foo.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/vendor/matlab/dace/predictor.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/vendor/matlab/dace/regpoly0.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/vendor/matlab/dace/regpoly1.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pysurrogate/vendor/matlab/dace/regpoly2.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/_introduction.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pysurrogate/util/usage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pysurrogate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pysurrogate.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/README.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/README.template" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/_implementations.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/_implementations.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/_installation.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/_installation.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/_usage.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/_usage.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pysurrogate/models/sklearn_dacefit.py" beforeDir="false" afterPath="$PROJECT_DIR$/pysurrogate/models/sklearn_dacefit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pysurrogate/optimize.py" beforeDir="false" afterPath="$PROJECT_DIR$/pysurrogate/optimize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pysurrogate/run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -88,20 +27,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/pysurrogate$usage.coverage" NAME="usage Coverage Results" MODIFIED="1533830952010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pysurrogate/util" />
     <SUITE FILE_PATH="coverage/pysurrogate$optimize.coverage" NAME="optimize Coverage Results" MODIFIED="1533588968888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pysurrogate" />
-    <SUITE FILE_PATH="coverage/pysurrogate$build.coverage" NAME="build Coverage Results" MODIFIED="1533567704600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/docs" />
-    <SUITE FILE_PATH="coverage/pysurrogate$run.coverage" NAME="run Coverage Results" MODIFIED="1533661133850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pysurrogate" />
+    <SUITE FILE_PATH="coverage/pysurrogate$run.coverage" NAME="run Coverage Results" MODIFIED="1533828882140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pysurrogate" />
+    <SUITE FILE_PATH="coverage/pysurrogate$build.coverage" NAME="build Coverage Results" MODIFIED="1533831418391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/docs" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="optimize.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pysurrogate/optimize.py">
+      <file leaf-file-name="README.template" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/README.template">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="176" column="27" lean-forward="true" selection-start-line="176" selection-start-column="27" selection-end-line="176" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -127,12 +64,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/metrics.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/pysurrogate/error_metrics.py" />
         <option value="$PROJECT_DIR$/pysurrogate/models/GaussianProcess.py" />
-        <option value="$PROJECT_DIR$/docs/source/_usage.rst" />
         <option value="$PROJECT_DIR$/docs/source/references.bib" />
-        <option value="$PROJECT_DIR$/docs/source/_installation.rst" />
         <option value="$PROJECT_DIR$/docs/source/conf.py" />
         <option value="$PROJECT_DIR$/pysurrogate/metamodel.py" />
         <option value="$PROJECT_DIR$/pysurrogate/fit.py" />
@@ -149,7 +83,6 @@
         <option value="$PROJECT_DIR$/pysurrogate/util/matlabengine.py" />
         <option value="$PROJECT_DIR$/pysurrogate/models/sklearn_polyregr.py" />
         <option value="$PROJECT_DIR$/pysurrogate/archive/gp/sklearn/GaussianProcess.py" />
-        <option value="$PROJECT_DIR$/pysurrogate/models/sklearn_dacefit.py" />
         <option value="$PROJECT_DIR$/pysurrogate/util/misc.py" />
         <option value="$PROJECT_DIR$/pysurrogate/util/distance.py" />
         <option value="$PROJECT_DIR$/pysurrogate/models/scipy_rbf.py" />
@@ -158,7 +91,17 @@
         <option value="$PROJECT_DIR$/pysurrogate/models/meta_torch.py" />
         <option value="$PROJECT_DIR$/pysurrogate/surrogate.py" />
         <option value="$PROJECT_DIR$/pysurrogate/models/torch_nn.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/docs/source/index.rst" />
+        <option value="$PROJECT_DIR$/docs/source/_installation.rst" />
+        <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/pysurrogate/optimize.py" />
+        <option value="$PROJECT_DIR$/pysurrogate/util/usage.py" />
+        <option value="$PROJECT_DIR$/pysurrogate/models/sklearn_dacefit.py" />
+        <option value="$PROJECT_DIR$/docs/source/_usage.rst" />
+        <option value="$PROJECT_DIR$/docs/source/_implementations.rst" />
+        <option value="$PROJECT_DIR$/docs/source/_introduction.rst" />
+        <option value="$PROJECT_DIR$/docs/README.template" />
       </list>
     </option>
   </component>
@@ -182,7 +125,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,6 +136,19 @@
               <item name="pysurrogate" type="b2602c69:ProjectViewProjectNode" />
               <item name="pysurrogate" type="47feb1d3:ProjectViewModuleNode" />
               <item name="pysurrogate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pysurrogate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pysurrogate" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="pysurrogate" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pysurrogate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pysurrogate" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="pysurrogate" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pysurrogate" type="b2602c69:ProjectViewProjectNode" />
@@ -219,14 +174,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="surr&#9;FILE&#9;file:///Users/julesy/workspace/pysurrogate/pysurrogate/surrogate.py&#10;suo&#9;null&#9;null&#10;run&#9;FILE&#9;file:///Users/julesy/workspace/pysurrogate/pysurrogate/run.py" />
+    <property name="SearchEverywhereHistoryKey" value="usage&#9;FILE&#9;file:///Users/julesy/workspace/pysurrogate/pysurrogate/util/usage.py&#10;surr&#9;FILE&#9;file:///Users/julesy/workspace/pysurrogate/pysurrogate/surrogate.py&#10;suo&#9;null&#9;null&#10;run&#9;FILE&#9;file:///Users/julesy/workspace/pysurrogate/pysurrogate/run.py" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="pyconsole" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -238,18 +194,19 @@
     <option name="myIpythonEnabled" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/source" />
+      <recent name="$PROJECT_DIR$/pysurrogate/models" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/pysurrogate/models/pygp" />
+      <recent name="$PROJECT_DIR$/pysurrogate" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pysurrogate/util" />
       <recent name="$PROJECT_DIR$/pysurrogate/models/gp" />
       <recent name="$PROJECT_DIR$/pysurrogate/models/eim" />
       <recent name="$PROJECT_DIR$/pysurrogate/models/gp/sklearn" />
       <recent name="$PROJECT_DIR$/pysurrogate/models/gp/gpml" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pysurrogate/models" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/pysurrogate/models/pygp" />
-      <recent name="$PROJECT_DIR$/pysurrogate" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -264,7 +221,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RunManager" selected="Python.build">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="pysurrogate" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -341,16 +298,37 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="usage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pysurrogate" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pysurrogate/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pysurrogate/util/usage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.build" />
       <item itemvalue="Python.run" />
       <item itemvalue="Python.optimize" />
+      <item itemvalue="Python.usage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.build" />
+        <item itemvalue="Python.usage" />
         <item itemvalue="Python.run" />
         <item itemvalue="Python.optimize" />
-        <item itemvalue="Python.build" />
       </list>
     </recent_temporary>
   </component>
@@ -373,78 +351,79 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" x="0" y="0" width="299" height="677" id="Documentation" order="6" side_tool="true" weight="0.3294031" />
+      <window_info anchor="right" x="0" y="0" width="299" height="677" id="Documentation" order="7" side_tool="true" weight="0.3294031" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25384617" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3923077" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32948717" />
-      <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718495" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27192336" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32948717" />
-      <window_info anchor="right" id="SciView" order="5" />
+      <window_info anchor="right" id="SciView" order="5" weight="0.26897568" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.32948717" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3871795" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45897436" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32948717" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="8" weight="0.32948717" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.template" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/scipy/interpolate/rbf.py</url>
-          <line>225</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="32" />
+      <option name="time" value="38" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>loss.item()</expression-string>
+        <expression-string>_Y - eval(_X)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>loss.item('data')</expression-string>
+        <expression-string>_Y, eval(_X)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>loss['data']</expression-string>
+        <expression-string>np.concatenate([np.sum(np.square(X), axis=1)[:,None], np.sum(np.sqrt(X), axis=1)[:,None]], axis=1)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>loss</expression-string>
+        <expression-string>np.concatenate([np.sum(np.square(X), axis=1), np.sum(np.sqrt(X), axis=1)], axis=1)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>loss.data</expression-string>
+        <expression-string>np.concatenate([np.sum(np.square(X), axis=1), np.sum(np.sqrt(X), axis=1)], axis=1]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>F</expression-string>
+        <expression-string>np.concatenate([np.sum(np.square(X), axis=1), np.sum(np.sqrt(X), axis=1)]), axis=1]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>np.array([np.square(X * 2) - 200, np.sqrt(X)])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -454,22 +433,52 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>I</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>X</expression-string>
+        <expression-string>np.concatenate(X, axis=2).reshape(1000*1000, 2)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/gp/__init__.py">
+    <entry file="file://$PROJECT_DIR$/pysurrogate/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/models/meta_sklearn.py" />
+    <entry file="file://$PROJECT_DIR$/docs/source/references.bib">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/source/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="155" column="61" selection-start-line="155" selection-start-column="61" selection-end-line="155" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/source/_contact.rst">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pysurrogate/util/misc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pysurrogate/models/torch_nn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -477,409 +486,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/build.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/gp/dacefit/regr.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/gp/dacefit/optimize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/gp/dacefit/dace.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/gp/dacefit/corr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/multi_surrogate.py" />
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/gp/dacefit/fit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/gp/dacefit/surr_dacefit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/gp/gpml/gp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/gp/meta_gpy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/gp/meta_gpflow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/gp/meta_george.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-448">
-          <caret line="84" column="26" lean-forward="true" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/bokeh/tests/test_themes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/util/error_metrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/gp/meta_matlab.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="26" lean-forward="true" selection-end-line="77" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/vendor/matlab/dace/dace_fit.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1826" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/matlab/engine/fevalfuture.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/util/matlabengine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/preprocessing/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="1248" column="60" selection-start-line="1248" selection-start-column="60" selection-end-line="1248" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/models/sklearn_polyregr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/meta_gb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/meta_poly.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/meta_rbf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/gp/meta_dace.py">
+    <entry file="file://$PROJECT_DIR$/pysurrogate/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="53" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/numpy/lib/function_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="3949" column="27" lean-forward="true" selection-start-line="3949" selection-start-column="27" selection-end-line="3949" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/sklearn/utils/validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="440" selection-start-line="440" selection-end-line="440" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pysurrogate/optimize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="80" column="19" lean-forward="true" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/gp/sklearn/GaussianProcess.py">
+    <entry file="file://$PROJECT_DIR$/pysurrogate/surrogate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#163#200#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/models/matlab_dacefit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-307">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/meta_svm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/meta_rbf_boost.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/meta_dnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/meta_rbf_github.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/meta_myrbf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_import_hook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/util/misc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pysurrogate/models/sklearn_dacefit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#163#200#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="690">
+          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/models/scipy_rbf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/scipy/interpolate/rbf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="188" lean-forward="true" selection-start-line="188" selection-end-line="188" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/util/distance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/models/my_rbf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/run.py">
+    <entry file="file://$PROJECT_DIR$/pysurrogate/util/usage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/meta_nearest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
+          <caret line="12" column="56" lean-forward="true" selection-end-line="44" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/meta_nn.py">
+    <entry file="file://$PROJECT_DIR$/docs/source/_usage.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-159">
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/archive/meta_torch.py">
+    <entry file="file://$PROJECT_DIR$/docs/Makefile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/make.bat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/source/_installation.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-734">
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/surrogate.py">
+    <entry file="file://$PROJECT_DIR$/docs/source/_implementations.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/source/index.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py">
+    <entry file="file://$PROJECT_DIR$/docs/source/_introduction.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/build.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/models/torch_nn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pymoo/pymoo/util/normalization.py">
+    <entry file="file://$PROJECT_DIR$/README.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-        </state>
+        <state relative-caret-position="-866" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pysurrogate/optimize.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/README.template">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="176" column="27" lean-forward="true" selection-start-line="176" selection-start-column="27" selection-end-line="176" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
         </state>
       </provider>
     </entry>
