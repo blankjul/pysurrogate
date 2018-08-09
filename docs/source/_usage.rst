@@ -43,7 +43,7 @@ method.
 
         # fit the model and predict the data
         model = fit(X, Y, n_folds=3, disp=True, normalize_X=True, normalize_Y=True)
-    
+
         # create two dimensional data to test the
         M = np.meshgrid(np.linspace(100, 200, 1000), np.linspace(100, 200, 1000))
         _X = np.concatenate([X[:, :, None] for e in X], axis=2).reshape(n_samples * n_samples, 2)

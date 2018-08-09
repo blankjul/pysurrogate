@@ -15,7 +15,7 @@
     <SUITE FILE_PATH="coverage/pysurrogate$usage.coverage" NAME="usage Coverage Results" MODIFIED="1533830952010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pysurrogate/util" />
     <SUITE FILE_PATH="coverage/pysurrogate$optimize.coverage" NAME="optimize Coverage Results" MODIFIED="1533588968888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pysurrogate" />
     <SUITE FILE_PATH="coverage/pysurrogate$run.coverage" NAME="run Coverage Results" MODIFIED="1533828882140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pysurrogate" />
-    <SUITE FILE_PATH="coverage/pysurrogate$build.coverage" NAME="build Coverage Results" MODIFIED="1533831418391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/docs" />
+    <SUITE FILE_PATH="coverage/pysurrogate$build.coverage" NAME="build Coverage Results" MODIFIED="1533831624764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/docs" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -378,37 +378,37 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>_Y - eval(_X)</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>_Y, eval(_X)</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.concatenate([np.sum(np.square(X), axis=1)[:,None], np.sum(np.sqrt(X), axis=1)[:,None]], axis=1)</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.concatenate([np.sum(np.square(X), axis=1), np.sum(np.sqrt(X), axis=1)], axis=1)</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.concatenate([np.sum(np.square(X), axis=1), np.sum(np.sqrt(X), axis=1)], axis=1]</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.concatenate([np.sum(np.square(X), axis=1), np.sum(np.sqrt(X), axis=1)]), axis=1]</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.array([np.square(X * 2) - 200, np.sqrt(X)])</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -418,7 +418,7 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.concatenate(X, axis=2).reshape(1000*1000, 2)</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
