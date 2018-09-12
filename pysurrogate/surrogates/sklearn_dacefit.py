@@ -10,7 +10,6 @@ import warnings
 
 import numpy as np
 import scipy
-from pymop.problem import Problem
 from scipy import linalg, optimize
 from sklearn.base import BaseEstimator, RegressorMixin
 from sklearn.gaussian_process import correlation_models, regression_models
@@ -20,18 +19,29 @@ from sklearn.utils import deprecated, check_random_state, check_X_y
 from sklearn.utils.validation import check_is_fitted, check_array
 
 from pymoo.algorithms.nsga2 import NSGA2
+from pymoo.util.normalization import normalize, denormalize
+from pymop.problem import Problem
 from pysurrogate.surrogate import Surrogate
+from pysurrogate.transformation.active_subspaces import ActiveSubspaceTransformation
 
 
 class Dacefit(Surrogate):
-    def __init__(self, regr, corr, ARD):
+    def __init__(self, regr, corr, ARD, dim_reduct):
         Surrogate.__init__(self)
         self.regr = regr
         self.corr = corr
         self.ARD = ARD
+        self.dim_reduct = dim_reduct
+
         self.model = None
+        self.transformation = None
 
     def _predict(self, X):
+
+        if self.transformation is not None:
+            X = self.transformation.forward(X)
+            #X = denormalize(X, self.X_min, self.X_max)
+
         return self.model.predict(X, eval_MSE=True)
 
     def _fit(self, X, F, **kwargs):
@@ -39,10 +49,19 @@ class Dacefit(Surrogate):
         warnings.filterwarnings('ignore')
 
         n_restarts = 3
-        #if 'expensive' in data and data['expensive']:
+        # if 'expensive' in data and data['expensive']:
         #    n_restarts = 20
-        #else:
+        # else:
         #    n_restarts = 3
+
+        if self.dim_reduct is None:
+            pass
+        elif self.dim_reduct == 'active_subspaces':
+            self.transformation = ActiveSubspaceTransformation(X, F)
+            X = self.transformation.forward(X)
+            #X, self.X_min, self.X_max = normalize(X, return_bounds=True)
+        else:
+            raise Exception("Unknown method for dimensionality_reduction.")
 
         n_var = X.shape[1]
 
@@ -55,7 +74,7 @@ class Dacefit(Surrogate):
                                 corr=self.corr,
                                 random_start=n_restarts,
                                 optimizer='fmin_cobyla',
-                                #optimizer='f_min',
+                                # optimizer='f_min',
                                 theta0=theta[0],
                                 thetaL=theta[1],
                                 thetaU=theta[2],
@@ -68,15 +87,13 @@ class Dacefit(Surrogate):
     def get_params():
         val = []
         for corr in ['absolute_exponential', 'squared_exponential', 'cubic', 'linear']:
-            for regr in ['constant', 'linear']:# , 'quadratic']:
-                val.append({'corr': corr, 'regr': regr, 'ARD': False})
-                #val.append({'corr': corr, 'regr': regr, 'ARD': True})
+            for regr in ['constant', 'linear']:  # , 'quadratic']:
+                # for ARD in [True, False]:
+                for ARD in [False]:
+                    for dim_reduct in [None, 'active_subspaces']:
+                        val.append({'corr': corr, 'regr': regr, 'ARD': ARD,
+                                    'dim_reduct': dim_reduct})
         return val
-
-
-
-
-
 
 
 @deprecated("GaussianProcess was deprecated in version 0.18 and will be "
@@ -328,10 +345,9 @@ class GaussianProcess(BaseEstimator, RegressorMixin):
         # Calculate matrix of distances D between samples
         D, ij = l1_cross_distances(X)
         if (np.min(np.sum(D, axis=1)) == 0.
-            and self.corr != correlation_models.pure_nugget):
+                and self.corr != correlation_models.pure_nugget):
             raise Exception("Multiple input features cannot have the same"
                             " target value.")
-
 
         # Regression matrix and parameters
         F = self.regr(X)
@@ -617,7 +633,7 @@ class GaussianProcess(BaseEstimator, RegressorMixin):
             # Light storage mode (need to recompute D, ij and F)
             D, ij = l1_cross_distances(self.X)
             if (np.min(np.sum(D, axis=1)) == 0.
-                and self.corr != correlation_models.pure_nugget):
+                    and self.corr != correlation_models.pure_nugget):
                 raise Exception("Multiple X are not allowed")
             F = self.regr(self.X)
 
@@ -736,8 +752,8 @@ class GaussianProcess(BaseEstimator, RegressorMixin):
                                             self.reduced_likelihood_function)
 
             X, _, _ = NSGA2(pop_size=10).solve(problem, 200,
-                                                                   return_only_feasible=True,
-                                                                   return_only_non_dominated=True)
+                                               return_only_feasible=True,
+                                               return_only_non_dominated=True)
 
             optimal_theta = X[0, :]
             optimal_rlf_value, optimal_par = \
@@ -932,7 +948,7 @@ class GaussianProcess(BaseEstimator, RegressorMixin):
         if np.any(self.nugget) < 0.:
             raise ValueError("nugget must be positive or zero.")
         if (n_samples is not None
-            and self.nugget.shape not in [(), (n_samples,)]):
+                and self.nugget.shape not in [(), (n_samples,)]):
             raise ValueError("nugget must be either a scalar "
                              "or array of length n_samples.")
 

@@ -21,7 +21,7 @@ class RBF(Surrogate):
     @staticmethod
     def get_params():
         val = []
-        for rbf in ['multiquadric', 'inverse', 'gaussian', 'linear', 'cubic', 'quintic', 'thin_plate']:
+        for rbf in ['multiquadric', 'inverse', 'gaussian', 'linear', 'cubic', 'quintic']:
             val.append({'kernel': rbf})
         return val
 

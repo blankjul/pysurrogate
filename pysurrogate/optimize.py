@@ -1,3 +1,4 @@
+import time
 import warnings
 
 import numpy as np
@@ -10,23 +11,38 @@ from pysurrogate.util.misc import unique_rows, create_crossvalidation_sets
 
 def get_method(name):
     if name == 'scipy_rbf':
-        from pysurrogate.models.scipy_rbf import RBF
+        from pysurrogate.surrogates.scipy_rbf import RBF
         return RBF
     elif name == 'matlab_dacefit':
-        from pysurrogate.models.matlab_dacefit import Dacefit
+        from pysurrogate.surrogates.matlab_dacefit import Dacefit
         return Dacefit
     elif name == 'sklearn_polyregr':
-        from pysurrogate.models.sklearn_polyregr import PolynomialRegression
+        from pysurrogate.surrogates.sklearn_polyregr import PolynomialRegression
         return PolynomialRegression
     elif name == 'sklearn_dacefit':
-        from pysurrogate.models.sklearn_dacefit import Dacefit
+        from pysurrogate.surrogates.sklearn_dacefit import Dacefit
         return Dacefit
+    elif name == 'my_dacefit':
+        from pysurrogate.surrogates.my_dacefit import MyDacefit
+        return MyDacefit
     elif name == 'myrbf':
-        from pysurrogate.models.my_rbf import MyRBF
+        from pysurrogate.surrogates.my_rbf import MyRBF
         return MyRBF
-    elif name == 'nn':
-        from pysurrogate.models.torch_nn import Torch
+    elif name == 'george_gp':
+        from pysurrogate.surrogates.gpgeorge_gp import GPGeorge
+        return GPGeorge
+    elif name == 'gpy_gp':
+        from pysurrogate.surrogates.gpy_gp import GPyMetamodel
+        return GPyMetamodel
+    elif name == 'sklearn_gradient_boosting':
+        from pysurrogate.surrogates.sklearn_gradient_boosting import GradientBoosting
+        return GradientBoosting
+    elif name == 'torch_nn':
+        from pysurrogate.surrogates.torch_nn import Torch
         return Torch
+    elif name == 'active_subspace_gp':
+        from pysurrogate.surrogates.active_subspaces import ActiveSubspacesSurrogate
+        return ActiveSubspacesSurrogate
     else:
         raise Exception('Surrogate is unknown: %s' % name)
 
@@ -44,9 +60,13 @@ def get_method_and_params(entry):
             "Either a list of strings (each is a model), or a list of tuples (1) model (2) params.")
 
 
-def fit(X, Y, methods=['nn', 'scipy_rbf', 'sklearn_polyregr', 'sklearn_dacefit'], func_error=calc_mse, disp=False,
+
+
+
+def fit(X, Y, methods=['george_gp', 'gpy_gp', 'sklearn_gradient_boosting', 'my_dacefit', 'torch_nn', 'scipy_rbf', 'sklearn_polyregr',
+                       'sklearn_dacefit'], func_error=calc_mse, disp=False,
         normalize_X=False, normalize_Y=False,
-        do_crossvalidation=True, n_folds=10, crossvalidation_sets=None):
+        do_crossvalidation=True, n_folds=5, crossvalidation_sets=None, debug=False):
     """
 
     The is the public interface which fits a surrogate res that is able to predict more than one target value.
@@ -65,7 +85,8 @@ def fit(X, Y, methods=['nn', 'scipy_rbf', 'sklearn_polyregr', 'sklearn_dacefit']
         prediction F_hat of the res with the true values F.
     disp : bool
         Print output during the fitting of the surrogate archive with information about the error.
-
+    debug : bool
+        If true warnings and exceptions are shown. Otherwise they are suppressed.
     Returns
     -------
 
@@ -107,8 +128,11 @@ def fit(X, Y, methods=['nn', 'scipy_rbf', 'sklearn_polyregr', 'sklearn_dacefit']
 
         try:
             method, params = get_method_and_params(entry)
-        except:
-            warnings.warn("Not able to load model %s. Will be skipped." % entry)
+        except Exception as e:
+            if debug:
+                raise e
+                warnings.warn(str(e))
+                warnings.warn("Not able to load model %s. Will be skipped." % entry)
             continue
 
         for param in params:
@@ -132,29 +156,38 @@ def fit(X, Y, methods=['nn', 'scipy_rbf', 'sklearn_polyregr', 'sklearn_dacefit']
             result = []
 
             # for each method validate
-            for entry in surrogates:
-                name, method, param = entry['name'], entry['method'], entry['param']
+            for k, entry in enumerate(surrogates):
 
-                error = np.full(n_folds, np.inf)
+                try:
+                    name, method, param = entry['name'], entry['method'], entry['param']
 
-                # on each validation set
-                for i, (training, test) in enumerate(crossvalidation_sets):
-                    impl = method(**param)
-                    impl.fit(X[training, :], Y[training, [m]])
+                    error = np.full(n_folds, np.inf)
+                    duration = np.full(n_folds, np.nan)
 
-                    Y_hat = impl.predict(X[test, :], return_std=False)
-                    error[i] = func_error(Y[test, [m]], Y_hat)
+                    # on each validation set
+                    for i, (training, test) in enumerate(crossvalidation_sets):
+                        impl = method(**param)
 
-                result.append({'name': name, 'method': method, 'param': param, 'error': error})
+                        start_time = time.time()
+                        warnings.filterwarnings("ignore")
+                        impl.fit(X[training, :], Y[training, [m]])
+                        duration[i] = time.time() - start_time
+
+                        Y_hat = impl.predict(X[test, :], return_std=False)
+                        error[i] = func_error(Y[test, [m]], Y_hat)
+
+                except Exception as e:
+                    if debug:
+                        print(e)
+                        warnings.warn("Error while using fitting: %s %s %s" % (name, method, param))
+
+                result.append(
+                    {'name': name, 'method': method, 'param': param, 'error': error, 'duration': np.mean(duration)})
 
             result = sorted(result, key=lambda e: np.mean(e['error']))
 
             if disp:
-                print("Target %s" % (m + 1))
-                for i in range(len(result)):
-                    entry = result[i]
-                    print(entry['name'], entry['param'], entry['error'], np.mean(entry['error']))
-                print("=" * 40)
+                __display(result, str(m+1))
 
             crossvalidation.append(result)
 
@@ -177,25 +210,24 @@ def fit(X, Y, methods=['nn', 'scipy_rbf', 'sklearn_polyregr', 'sklearn_dacefit']
         impl.fit(X, Y[:, m])
         models.append(impl)
 
-    res['models'] = models
+    res['surrogates'] = models
 
     return res
 
 
 def predict(res, X):
-
     # if it is only one dimensional convert it
     if X.ndim == 1:
         X = X[:, None]
 
-    Y = np.full((X.shape[0], len(res['models'])), np.inf)
+    Y = np.full((X.shape[0], len(res['surrogates'])), np.inf)
 
     # denormalize if normalized before
     if res['normalize_X']:
         X = normalize(X, res['X_min'], res['X_max'])
 
     # for each target value to predict there exists a model
-    for m, model in enumerate(res['models']):
+    for m, model in enumerate(res['surrogates']):
         Y[:, m] = model.predict(X)
 
     # denormalize target if done while fitting
@@ -203,3 +235,34 @@ def predict(res, X):
         Y = denormalize(Y, res['Y_min'], res['Y_max'])
 
     return Y
+
+
+
+def display(model):
+    for m, result in enumerate(model['crossvalidation']):
+        __display(result,(m+1))
+
+
+def __display(result, lbl_obj):
+
+    for i in range(len(result)):
+
+        entry = result[i]
+
+        attrs = [('name', entry['name'], 27),
+                 ('error', "%.5f" % np.mean(entry['error']), 7),
+                 ('duration (sec)', "%.5f" % np.mean(entry['duration']), 7),
+                 ('param', entry['param'], 200),
+                 ]
+
+        regex = " | ".join(["{}"] * len(attrs))
+
+        if i == 0:
+            print("=" * 50)
+            print("Target %s" % lbl_obj)
+            print("=" * 50)
+            print(regex.format(*[name.ljust(width) for name, _, width in attrs]))
+            print("-" * 50)
+
+        print(regex.format(*[str(val).ljust(width) for _, val, width in attrs]))
+
